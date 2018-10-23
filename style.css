@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image: radial-gradient(circle, white, rgb(255, 125, 125), rgb(124, 226, 124));
+	animation: colorchange 15s infinite;
+}
+
+header{
+	height: 200px;
+	text-align: center;
+}
+h1{
+	font-size: 45px;
+	
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite, glavninaslov 5s infinite;
+	text-shadow: 0 0 15px rgb(95, 94, 95);
+	
+}
+
+.paragraf{
+	font-size: 30px;
+	color: goldenrod;
+	
+	font-weight: bold;
+	-webkit-animation: vibracija 0.3s linear infinite both;
+    animation: vibracija 0.3s linear infinite both;
+}
+.paragraf::before{
+	content: '☠';
+	margin: 0 15px;
+}
+.paragraf::after{
+	content: '☢';
+	margin: 0 15px;
+}
+.page-content{
+	min-height: 800px;
+	
+}
+
+#osnova{
+	background:yellow;
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	
+	animation: promena 4.5s infinite;
+}
+
+#osnova2{
+	background:yellow;
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	text-align: center;
+	animation: promena2 5s infinite;
+}
+.ikonica{
+	padding-top: 30px;
+	color: #006655;
+	-webkit-animation: vibracija 0.5s linear infinite both;
+    animation: vibracija 0.5s linear infinite both;
+}
+.ikonica::after{
+	content: '☺';
+	font-size: 100px;
+}
+#osnova3{
+	background:yellow;
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 50%;
+	animation: promena3 6s infinite;
+}
+#osnova4{
+	background:#fff;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 50%;
+	animation: promena4 6s infinite;
+	text-align: center;
+}
+.txt{
+padding-top: 25px;
+color: black;
+font-size: 22px;
+overflow: hidden;
+	white-space: nowrap;
+	animation: typing-two 2.5s steps(40, end), blink-caret-two .75s step-end infinite, paragraf-two 5s infinite;
+	text-shadow: 0 0 15px rgb(95, 94, 95);
+}
+#osnova5{
+	background:yellow;
+	width:180px;
+	height:180px;
+	position:absolute;
+	top:0;
+	right:0;
+	animation: promena5 6s infinite;
+	text-align: center;
+}
+.two{
+	color: #ff1717;
+}
+
+#osnova6{
+	
+
+	width:500px;
+	height:500px;
+	position:absolute;
+	animation: promena6 6s infinite;
+	
+
+
+}
+#krug-animacija{
+	width:100%;
+	top: 60px;
+	left:45%;
+	position: relative;
+}
+#krug-spolja {
+
+box-shadow: 0 0 32px 10px rgba(255, 0, 140, 0.500);
+width: 150px;
+height: 150px;
+border-radius: 100%;
+padding: 15px;
+border-top: dotted transparent 7px;
+border-right: dotted transparent 7px;
+border-bottom: dotted #ff44ab 7px;
+border-left: dotted #ff44ab 7px;
+animation: spolja 600ms linear infinite;
+position: relative;
+
+
+}
+
+#krug-unutra {
+
+	box-shadow: 0 0 24px 7px rgba(255, 0, 140, 0.500);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border-top: solid rgba(255, 0, 140, 0.500) 10px;
+    border-right: solid rgba(255, 0, 140, 0.500) 10px;
+    border-bottom: solid #ff44ab 10px;
+    border-left: solid #ff44ab 10px;
+    animation: unutra 450ms linear infinite;
+    position: relative;
+	top: -165px;
+	left:25px;
+	
+}
+
+
+@keyframes unutra {
+	0% {transform: rotate(0deg);}
+	50%{
+	border-top: solid rgba(202, 68, 255, 0.500) 10px;
+    border-right: solid rgba(202, 68, 255, 0.500) 10px;
+    border-bottom: solid #ca44ff 10px;
+    border-left: solid #ca44ff 10px;
+	}
+	100% {transform: rotate(360deg);}
+}
+@keyframes spolja {
+	0% {transform: rotate(0deg);}
+	50%{
+		border-top: solid rgba(202, 68, 255, 0.500) 10px;
+		border-right: solid rgba(202, 68, 255, 0.500) 10px;
+		border-bottom: solid #ca44ff 10px;
+		border-left: solid #ca44ff 10px;
+		}
+	100% {transform: rotate(-360deg);
+	}
+	
+}
+
+@-webkit-keyframes vibracija {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+		transform: translate(0);
+		color: #000;
+		
+    }
+}
+
+@keyframes vibracija {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+		transform: translate(0);
+		color: #000;
+		
+    }
+}
+@keyframes promena {
+	
+	0% {
+		top:30%;
+		left:20%;
+
+		
+	}
+	
+	20% {
+		top: 50%;
+		left: 60%;
+		background:rgb(51, 255, 0);
+		
+	}
+
+	40% {
+		top: 50%;
+		left: 75%;
+		background:rgb(127, 12, 131);
+		width: 270px;
+		height: 170px;
+	}
+	
+	60% {
+		top:60%;
+		left:25%;
+		background:#fff;
+	}
+	
+	100% {
+		top:20%;
+		left:20%;
+		width: 220px;
+		height: 220px;
+	}
+}
+@keyframes promena2 {
+	
+	0% {
+		top:30%;
+		left:20%;
+		
+
+		
+	}
+	
+	20% {
+		top: 70%;
+		left:  70%;
+		background:rgb(247, 0, 255);
+		width: 250px;
+		height: 250px;
+		
+	}
+	
+	60% {
+		top:80%;
+		left:30%;
+		background:#fff;
+		border-radius: 75%;
+		border: 2px solid gold;
+	}
+	
+	100% {
+		top:20%;
+		left:20%;
+		
+		
+	}
+}
+@keyframes promena3 {
+	
+	0% {
+		top:30%;
+		left:20%;
+
+		
+	}
+	
+	20% {
+		top: 60%;
+		left:  35%;
+		background:rgb(0, 255, 128);
+		
+	}
+	
+	60% {
+		top:45%;
+		left:50%;
+		width: 300px;
+		height: 300px;
+		background:rgb(98, 0, 255);
+	}
+	
+	100% {
+		top:20%;
+		left:20%;
+	}
+}
+@keyframes promena4 {
+	
+	0% {
+		top:30%;
+		left:20%;
+
+		
+	}
+	
+	20% {
+		top: 60%;
+		left:  35%;
+		background:#000000;
+		
+	}
+	
+	60% {
+		top:45%;
+		left:50%;
+		width: 200px;
+		height: 200px;
+		background:#fff;
+	}
+	
+	100% {
+		top:20%;
+		left:20%;
+	}
+}
+@keyframes promena5 {
+	
+	0% {
+		top:30%;
+		right:20%;
+		border: 3px dashed green;
+
+		
+	}
+	
+	20% {
+		top:60%;
+		right:45%;
+		background:rgb(255, 255, 255);
+		
+		
+	}
+	40%{
+		top:80%;
+		right:85%;
+		background:rgb(39, 53, 255);
+		border-radius: 50%;
+	}
+	
+	60% {
+		top:60%;
+		right:85%;
+		background:rgb(28, 185, 247);
+	}
+	
+	100% {
+		top:40%;
+		right:20%;
+		width: 200px;
+		height: 200px;
+	}
+}
+@keyframes promena6 {
+	
+	0% {
+		top:0%;
+		left: 0%;
+
+		
+	}
+	
+	20% {
+		top: 50%;
+		left: 70%;
+		background:rgb(51, 255, 0);
+		
+	}
+
+	40% {
+		top: 50%;
+		left: 25%;
+		background:rgb(127, 12, 131);
+		width: 270px;
+		height: 170px;
+	}
+	
+	60% {
+		top:70%;
+		left:45%;
+		background:#fff;
+	}
+	
+	100% {
+		top:20%;
+		left:20%;
+		width: 220px;
+		height: 220px;
+	}
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width:50%;
+    }
+}
+@keyframes typing-two {
+    from {
+        width: 0;
+    }
+    to {
+        width:70%;
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes glavninaslov {
+    0% {
+        color: #fce993;
+    }
+    25% {
+        color: #40ffe1;
+    }
+    50% {
+        color: #fd0505;
+    }
+    75% {
+		color: #fff;
+		border-color: transparent;
+    }
+    100% {
+        color: #deff4c;
+    }
+}
+@keyframes paragraf-two{
+	0% {
+        color: #9bff18;
+    }
+    25% {
+		color: #00241e;
+		font-size: 24px;
+    }
+    50% {
+		color: #a80000;
+		font-size: 26px;
+    }
+    75% {
+		color: #ffd000;
+		border-color: transparent;
+		font-size: 28px;
+    }
+    100% {
+		color: #54fc06;
+		font-size: 32px;
+    }
+}
+ @keyframes colorchange
+    {
+      0%   {background-image: radial-gradient(circle, rgb(255, 125, 125),rgb(124, 226, 124),white  );}
+      20%  {background-image: radial-gradient(circle,rgb(124, 226, 124), white ,rgb(255, 125, 125) );}
+      40% {background-image: radial-gradient(circle ,white ,rgb(124, 226, 124), rgb(255, 125, 125) );}
+	  60%  {background-image: radial-gradient(circle ,rgb(124, 226, 124), rgb(255, 125, 125),white  );}
+	  80%  {background-image: radial-gradient(circle ,white ,rgb(255, 125, 125),rgb(124, 226, 124) );}
+	  100% {background-image: url(img/digital-matrix.jpg);background-position:  center center; background-size: cover;}
+    }
+
